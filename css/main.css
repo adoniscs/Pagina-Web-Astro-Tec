@@ -39,6 +39,46 @@ body{
 }
 /* fim do loader */
 
+/* menu novo */
+.logo{
+    background-attachment: fixed;
+    height: 48px;
+    margin: 12px 38px;
+    float: left; 
+}
+nav{
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 3px;
+    position: fixed;
+    width: 100%;
+    background: #202c45;
+    padding: 1px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 27px 25px;
+    transition: .5s;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background: #622070;
+}
+nav.bkgColor{
+    background: rgb(31, 32, 34);
+}
+/* fim do menu */
+
 .corpo{
     padding: 0;
     margin: 0;
@@ -46,6 +86,34 @@ body{
     height: 100vh;
     background:linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%),url("../img/923963.jpg") fixed no-repeat;
     background-size: cover;
+}
+
+.parallax h1{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: txtH1 3s 1 ease-in-out;
+    
+}
+/* efeito texto h1  */
+@keyframes txtH1{
+    from{
+        color: #202c45;
+        opacity: 1;
+    }
+    to{
+        letter-spacing: 8px;
+        opacity: 0;
+    }
 }
 
 /* teste parallax - conteudo do site */
@@ -86,7 +154,7 @@ body{
     transform: translateY(150px);
 }
 .container .card:hover .face.face1{
-    background: #ff0057;
+    background: #622070;
     transform: translateY(0);
 }
 .container .card .face.face1 .content{
@@ -145,72 +213,6 @@ body{
 /* fim do conteudo  */
 
 
- .parallax h1{
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    font-size: 3em;
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    animation: txtH1 3s 1 ease-in-out;
-    
-}
-/* efeito texto h1  */
-@keyframes txtH1{
-    from{
-        color: #202c45;
-        opacity: 1;
-    }
-    to{
-        letter-spacing: 8px;
-        opacity: 0;
-    }
-}
-
-/* menu novo */
-.logo{
-    background-attachment: fixed;
-    height: 48px;
-    margin: 12px 38px;
-    float: left; 
-}
-nav{
-    font-family: "Orbitron", sans-serif;
-    letter-spacing: 3px;
-    position: fixed;
-    width: 100%;
-    background: #202c45;
-    padding: 1px;
-    box-sizing: border-box;
-    z-index: 2;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-    float: right;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 27px 25px;
-    transition: .5s;
-}
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-}
-nav ul li:hover{
-    background: #ff0057;
-}
-nav.bkgColor{
-    background: rgb(31, 32, 34);
-}
 /* menu anterior*/
 
 /* nav{
