@@ -24,10 +24,10 @@
     <div class="corpo">
      <!-- menu -->
         <nav>
-            <img class="logo" src="img/logo1.png" alt="logo">
+            <a href="index.html"><img class="logo" src="img/logo1.png" alt="logo"></a>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Novidade</a></li>
                     <li><a href="http://www.google.com.br">Conteúdo</a></li>
@@ -91,25 +91,6 @@
             </div>
         </div>
     </div>
-    
-    <script>
-
-        // efeito para loader da pagina
-        //<![CDATA[
-        $(window).on('load', function(){
-            $('#hide .triangle .loading').fadeOut();
-            $('#hide').delay(1500).fadeOut('slow');
-            $('body').delay(1500).css({'overflow': 'visible'});
-        })
-        // efeito do menu 
-        $(window).on("scroll", function(){
-            if($(window).scrollTop()){
-                $('nav').addClass('bkgColor');
-            }
-            else{
-                $('nav').removeClass('bkgColor');
-            }
-        })
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
