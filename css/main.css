@@ -91,7 +91,7 @@ nav.bkgColor{
 
 .parallax h1{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive; 
     text-align: center;
     font-size: 3em;
     margin: 0;
@@ -102,11 +102,26 @@ nav.bkgColor{
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     letter-spacing: 3px;
-    animation: txtH1 3s 1 ease-in-out;
+   /* animation: txtH1 3s 1 ease-in-out; */
     
 }
+h1::after {
+    content: '|';
+    opacity: 1;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 /* efeito texto h1  */
-@keyframes txtH1{
+ /* @keyframes txtH1{
     from{
         color: #202c45;
         opacity: 1;
@@ -115,7 +130,7 @@ nav.bkgColor{
         letter-spacing: 8px;
         opacity: 0;
     }
-}
+} */
 
 /* teste parallax - conteudo do site */
 .parallax{
