@@ -1,4 +1,4 @@
-# Página WEB - Astronomia & Tecnologia
+# Site - Astronomia & Tecnologia
 
   Em 2015 eu e mais um grupo de estudantes do curso de Informática na ETEC criamos um site com o tema de Astronomia. O Projeto foi contruído com as tecnologias HTML, CSS e Javascript com inclusão da bilbioteca JQuery. 
   
